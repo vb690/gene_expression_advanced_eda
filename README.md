@@ -5,4 +5,18 @@ Small project on coducting advanced exploratory descriptive analysis on a gene e
 
 ## Data
 
-## Analaysi
+## Analysis
+
+### Principal Component Analysis (PCA)
+
+### Uniform Manifold Approximation and Projection (UMAP) Analysis
+
+### Density Based Clustering in UMAP Space Analysis
+
+#### Sub-clusters Analysis
+
+### Clusters Gene Expression Analysis 
+
+### Lasso Regression Analysis 
+
+### Cluster Comparison Analysis
