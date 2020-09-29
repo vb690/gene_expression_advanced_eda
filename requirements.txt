@@ -1,0 +1,9 @@
+numpy
+scipy
+statsmodels
+pandas
+sklearn
+hdbscan
+umap-learn
+matplolib
+seaborn
