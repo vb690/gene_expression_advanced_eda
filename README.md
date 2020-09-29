@@ -4,6 +4,7 @@ Small project on coducting advanced exploratory descriptive analysis on a gene e
 ## Problem
 
 ## Data
+The data used from this projects come from a [this](https://archive.ics.uci.edu/ml/datasets/gene+expression+cancer+RNA-Seq) UCI - Machine Learning Repositry dataset.
 
 ## Analysis
 
