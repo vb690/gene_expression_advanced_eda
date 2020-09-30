@@ -4,7 +4,41 @@ Small project on coducting advanced exploratory descriptive analysis on a gene e
 ## Problem
 
 ## Data
-The data used from this projects come from a [this](https://archive.ics.uci.edu/ml/datasets/gene+expression+cancer+RNA-Seq) UCI - Machine Learning Repositry dataset.
+The data used from this projects come from a [this](https://archive.ics.uci.edu/ml/datasets/gene+expression+cancer+RNA-Seq) UCI - Machine Learning Repositry dataset with the following description reported in the website:  
+  
+This collection of data is part of the RNA-Seq (HiSeq) PANCAN data set, it is a random extraction of gene expressions of patients having different types of tumor: 
+  
+* **BRCA**: Breast Invasive Carcinoma 
+* **KIRC**: Kidney Renal Clear Cell Carcinoma
+* **COAD**: Colon Adenocarcinoma
+* **LUAD**: Lung Adenocarcinoma
+* **PRAD**: Prostate Adenocarcinoma
+
+### Characteristics
+Samples (instances) are stored row-wise. Variables (attributes) of each sample are RNA-Seq gene expression levels measured by illumina HiSeq platform. A dummy name (gene_XX) is given to each attribute, the attributes are in the same order as the [original submission](https://www.synapse.org/#!Synapse:syn4301332) where a complete list of the probes names can be found.  
+
+**Number of instances**: 801  
+**Number of attributes**: 20531  
+**Missing Values**: None  
+  
+**Gene Expression Table**
+|            | **gene_0** | ... | **gene_20530** |
+|:----------:|:----------:|-----|----------------|
+|  sample_0  |      0     | ... | 0.6            |
+|     ...    |     0.6    | ... | 0              |
+| sample_800 |     0.3    | ... | 0.2            |  
+  
+**Labels Table**  
+|            | **Class** |
+|:----------:|:---------:|
+|  sample_0  |    PRAD   |
+|     ...    |    ...    |
+| sample_800 |    LUAD   |
+
+
+### Source
+Samuele Fiorini, University of Genoa, redistributed under [Creative Commons license](http://creativecommons.org/licenses/by/3.0/legalcode) from [here](https://www.synapse.org/#!Synapse:syn4301332)
+
 
 ## Analysis
 
