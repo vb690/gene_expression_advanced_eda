@@ -42,6 +42,11 @@ Samuele Fiorini, University of Genoa, redistributed under [Creative Commons lice
 
 ## Analysis
 
+### Pre-Processing
+
+1. Retaining only the top 2000 genes showing the highest variance in the dataset.
+2. Robust rescaling the expression levels of each gene, applying the formula `rescaled = (gene_expression - median(gene_expression)) / IQR(gene_expression)` where `IQR` stands for `Inter Quartile Range`.
+
 ### Principal Component Analysis (PCA)
 
 <p align="center">   
