@@ -2,6 +2,18 @@
 Small project on conducting advanced exploratory descriptive analysis (EDA) on a gene expression dataset.
 
 ## Problem
+Given a dataset containing gene expression for a set of patients diagnosed with different types of tumors we would like to:
+
+1. Individuate a set of principal components explaining the maximum ammount of variance in the data
+2. Individuate the top genes contributing to each component
+3. Assess if non-linear dimensionality reduction can outperform PCA  
+  
+Starting from the assumption that we do not have access to the ground truth of which type of cancer each patient have  
+  
+1. Individuate the presence of clusters in the dataset
+2. Visualize gene expression in the different clusters
+4. Compare the level of gene expression between pairs of clusters
+3. Individuate the most prominent genes in terms of their capacity to discriminate from which cluster a sample is coming from
 
 ## Data
 The data used from this projects come from a [this](https://archive.ics.uci.edu/ml/datasets/gene+expression+cancer+RNA-Seq) UCI - Machine Learning Repositry dataset with the following description reported in the website:  
@@ -78,25 +90,31 @@ Samuele Fiorini, University of Genoa, redistributed under [Creative Commons lice
 ### Clusters Gene Expression Analysis 
 
 <p align="center">   
-  <img width="300" height="600"src="https://github.com/vb690/gene_expression_advanced_eda/blob/master/results/figures/5.png">
+  <img width="300" height="700"src="https://github.com/vb690/gene_expression_advanced_eda/blob/master/results/figures/5.png">
 </p>
 
 <p align="center">   
-  <img width="300" height="600"src="https://github.com/vb690/gene_expression_advanced_eda/blob/master/results/figures/6.png">
+  <img width="300" height="700"src="https://github.com/vb690/gene_expression_advanced_eda/blob/master/results/figures/6.png">
+</p>
+
+### Clusters Comparison Analysis
+
+<p align="center">   
+  <img width="300" height="900"src="https://github.com/vb690/gene_expression_advanced_eda/blob/master/results/figures/12.png">
 </p>
 
 ### Lasso Regression Analysis 
 
 <p align="center">   
-  <img width="600" height="300"src="https://github.com/vb690/gene_expression_advanced_eda/blob/master/results/figures/7.png">
+  <img width="700" height="300"src="https://github.com/vb690/gene_expression_advanced_eda/blob/master/results/figures/7.png">
 </p>
 
 <p align="center">   
-  <img width="600" height="300"src="https://github.com/vb690/gene_expression_advanced_eda/blob/master/results/figures/8.png">
+  <img width="700" height="300"src="https://github.com/vb690/gene_expression_advanced_eda/blob/master/results/figures/8.png">
 </p>
 
 <p align="center">   
-  <img width="600" height="200"src="https://github.com/vb690/gene_expression_advanced_eda/blob/master/results/figures/9.png">
+  <img width="700" height="300"src="https://github.com/vb690/gene_expression_advanced_eda/blob/master/results/figures/9.png">
 </p>
 
 <p align="center">   
@@ -105,10 +123,4 @@ Samuele Fiorini, University of Genoa, redistributed under [Creative Commons lice
 
 <p align="center">   
   <img width="700" height="300"src="https://github.com/vb690/gene_expression_advanced_eda/blob/master/results/figures/11.png">
-</p>
-
-### Cluster Comparison Analysis
-
-<p align="center">   
-  <img width="300" height="800"src="https://github.com/vb690/gene_expression_advanced_eda/blob/master/results/figures/12.png">
 </p>
