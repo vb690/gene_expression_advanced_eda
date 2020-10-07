@@ -2,18 +2,18 @@
 Small project on conducting advanced exploratory descriptive analysis (EDA) on a gene expression dataset.
 
 ## Problem
-Given a dataset containing gene expression for a set of patients diagnosed with different types of tumors we would like to:
+Given a dataset containing gene expressions for a set of patients diagnosed with different types of tumors we would like to:
 
-1. Individuate a set of principal components explaining the maximum ammount of variance in the data
-2. Individuate the top genes contributing to each component
-3. Assess if non-linear dimensionality reduction can outperform PCA  
+1. Individuate the two principal components explaining most of the variance in the data.
+2. Individuate the genes contributing the most to each component.
+3. Assess if non-linear dimensionality reduction can individuate more meaningful structures in the data.
   
-Starting from the assumption that we do not have access to the ground truth of which type of cancer each patient have  
+Then, starting from the assumption that we do not have access to the ground truth telling us which type of cancer each patient have:  
   
-1. Individuate the presence of clusters in the dataset
-2. Visualize gene expression in the different clusters
-4. Compare the level of gene expression between pairs of clusters
-3. Individuate the most prominent genes in terms of their capacity to discriminate from which cluster a sample is coming from
+1. Individuate the presence of clusters in the dataset.
+2. For each cluster, visualize the associated gene expression profile.
+4. Compare the gene expression profile between pairs of clusters.
+3. Individuate the most prominent genes in terms of their capacity to discriminate from which cluster a sample is coming from.
 
 ## Data
 The data used from this projects come from a [this](https://archive.ics.uci.edu/ml/datasets/gene+expression+cancer+RNA-Seq) UCI - Machine Learning Repositry dataset with the following description reported in the website:  
@@ -56,7 +56,9 @@ Samuele Fiorini, University of Genoa, redistributed under [Creative Commons lice
 
 ### Pre-Processing
 
-1. Retaining only the top 2000 genes showing the highest variance in the dataset.
+We applied two main preprocessing step to the dataset before conducting our analysis:
+
+1. Retaining only the 2000 genes with highest variance in the dataset.
 2. Robust rescaling the expression levels of each gene, applying the formula `rescaled = (gene_expression - median(gene_expression)) / IQR(gene_expression)` where `IQR` stands for `Inter Quartile Range`.
 
 ### Principal Component Analysis (PCA)
